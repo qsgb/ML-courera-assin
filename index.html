@@ -73,6 +73,10 @@ img {
 </div>
 <div id="data-preprocessing" class="section level2">
 <h2>Data Preprocessing</h2>
+<pre><code>## Loading required package: lattice
+## Loading required package: ggplot2
+## randomForest 4.6-10
+## Type rfNews() to see new features/changes/bug fixes.</code></pre>
 <p>The data is dowload from the cousera Practical Machine Learning course website(<a href="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv">pml-training</a> and <a href="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv">pml-testing</a>). These data come from the <a href="http://groupware.les.inf.puc-rio.br/har">Human Activity Recognition project</a>.They are read as trianRaw and testRaw in R. There are 160 variables in the datasets, the variable “outcome”&quot; was chosen to be predicted.</p>
 <pre class="r"><code>trainRaw &lt;- read.csv(&quot;pml-training.csv&quot;,header = TRUE)
 testRaw &lt;- read.csv(&quot;pml-testing.csv&quot;,header = TRUE)
